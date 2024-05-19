@@ -84,6 +84,15 @@ var cu = new counterUp({
 	append: 'K'
 });
 cu.start();
+var cu2 = new counterUp({
+	start: 0,
+	duration: 2000,
+	intvalues: true,
+	interval: 100,
+	append: '%',
+	selector: ".countuppercent",
+});
+cu2.start();
 
 // WOW active
 new WOW().init();
